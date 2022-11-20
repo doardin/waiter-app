@@ -1,4 +1,7 @@
+import { Button } from "../Button";
+import { Categories } from "../Categories";
 import { Header } from "../Header";
+import { Menu } from "../Menu";
 import { CategoriesContainer, Container, Footer, FooterContainer, MenuContainer } from "./styles";
 
 export function Main(){
@@ -7,14 +10,20 @@ export function Main(){
 			<Container>
 				<Header />
 
-				<CategoriesContainer></CategoriesContainer>
+				<CategoriesContainer>
+					<Categories />
+				</CategoriesContainer>
 
-				<MenuContainer></MenuContainer>
+				<MenuContainer>
+					<Menu />
+				</MenuContainer>
 			</Container>
 
 			<Footer>
 				<FooterContainer>
-
+					<Button onPress={ () => alert("Cu") }>
+						Novo pedido
+					</Button>
 				</FooterContainer>
 			</Footer>
 		</>
