@@ -21,7 +21,7 @@ export function Main(){
 
 			<Footer>
 				<FooterContainer>
-					<Button onPress={ () => alert("Cu") }>
+					<Button onPress={ () => alert("Novo pedido") }>
 						Novo pedido
 					</Button>
 				</FooterContainer>
